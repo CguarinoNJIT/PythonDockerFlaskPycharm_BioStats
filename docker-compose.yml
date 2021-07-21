@@ -8,13 +8,13 @@ services:
     depends_on:
       - db
     ports:
-      - "5000:5000"
+      - "6000:6000"
 
   db:
     image: mysql:5.7
     container_name: "MySQL_Database_BioStats"
     ports:
-      - "32000:3306"
+      - "32001:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
     volumes:
